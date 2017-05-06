@@ -104,12 +104,19 @@ p {
 
 /* HOME PAGE  */
 
+
 #home-header {
   
   width: 100%;
-  background-color: #b3d1ff;
+  /*background-color: #b3d1ff;*/
+  background-image: url('http://historycooperative.org/wp-content/uploads/2016/10/09d756f5-2f5e-49c2-806d-dad7cafebeb6-2060x1236.jpeg');
+
+  height: 700px;
+  background-size: cover;
 
 }
+
+
 
 .home-header-panel {
   /*margin: 0em 10em 3em;*/
@@ -119,17 +126,20 @@ p {
 #home-header-text {
   color: white;
   padding: 2em;
+  background-color: #2b2b2b;
+  margin-top: 5em;
+  
 }
 
 #home-header-text h1 {
   
   text-transform: uppercase;
-  font-size: 40pt;
+  font-size: 32pt;
 }
 
 #home-header-text h2 {
   
-  font-size: 20pt;
+  font-size: 16pt;
 }
 
 #home-header button {
