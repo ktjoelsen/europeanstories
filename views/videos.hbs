@@ -1,0 +1,34 @@
+
+{{> navbar}}
+
+
+
+<div class="container" id="videos-container">
+
+	<div class="row">	
+
+		{{#each videos}}
+			
+			<div class="col-md-4 col-sm-6 video-panel-container">
+				<div class="thumbnail video-panel">
+					
+					<a href="/singlevideo/{{this._id}}">
+						{{#embedYoutubeImg}}{{this}}{{/embedYoutubeImg}}
+					</a>
+					
+					<div class="video-panel-caption">
+						<p>{{this.speaker}} from {{this.speakerLocation}}</p>
+						
+					</div>
+			</div>
+		</div>
+		{{/each}}
+	
+	</div> 
+
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>
+<script src="/javascripts/videos.js"></script>

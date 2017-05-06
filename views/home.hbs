@@ -1,0 +1,140 @@
+
+{{> navbar}}
+
+
+<div  class="container nopadding" id="home-header">
+	<div class="row small-top-margin small-bottom-margin">
+		<div class="col-md-5 col-md-offset-1">
+	
+			<div class="home-header-panel">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Enlargement_of_the_European_Union_77.gif" width="600" height="600" frameborder="0" allowfullscreen></img>
+			</div>
+		</div>
+
+		<div class="col-md-5">
+			<div id="home-header-text">
+				<h1>Tell us a story about what makes you who you are</h1>
+				<h2><strong>Europeans. And their stories.</strong> is an online community where people can be authentic and real, exchanging how their lives changed with the construction of their European Union.</h2>
+
+				<a href="/submit"><button type="button" class="btn btn-custom">Share your story</button></a>
+
+				<!-- <a href="/videos"><button type="button" class="btn btn-custom">Listen to more stories</button></a> -->
+			</div>
+
+			
+
+		</div>
+
+
+		
+
+<!-- 		<div class="col-md-3">
+			<div class="video-header-panel">
+				<iframe src="http://www.youtube.com/embed/eitRd2Zlvz0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+
+		<div class="col-md-3">
+			<div class="video-header-panel">
+				<iframe src="http://www.youtube.com/embed/eitRd2Zlvz0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div> -->
+
+	</div>
+</div>
+
+ 
+
+<!-- 
+<div class="about-pitch">
+	<div class="page-container">
+
+
+		<h1 class="text-center">Welcome to The Story Swap</h1>
+				
+
+		<p class="lead">Join us in celebrating the launch of The Story Swap! Submit your story and enter to win one of three a $100 Amazon Gift Card prizes!</p>
+
+		
+		<p> Submit a story of 5-15 minutes in length about what makes you who you are today. </p>
+
+		<p>We are seeking thoughtful, reflective, and detailed submissions that go deeper than an everyday conversation. Let us know the real you!</p>
+
+		<p>Don’t have a story to tell, but still want to be in the contest? Refer a friend to submit their
+	 story, and if they win, you will get your own $50 Amazon Gift Card!</p>
+
+		<p>Stories will be rated on the following three categories, based on upvotes, so make sure to share your story with friends and family! <p>
+
+		<ul>
+			<li>Most courageous </li>
+			<li>Most inspiring</li>
+			<li>Most unique</li>
+		</ul>
+
+		<p>Keep in mind two guidelines to abide by</p>
+
+		<ol>
+			<li>Be authentic and real</li>
+			<li>Keep the story about you</li>
+
+		</ol>
+
+		<p><strong>Deadline to submit is May XX</strong>. You can record yourself on your phone or computer, you can have a friend record you, or you can record yourself speaking at an event. The quality and art of your storytelling is less important than the raw emotion and meaning behind the story you tell. 
+		</p>
+
+		<p>We can’t wait to hear your stories! </p>
+	   
+	   <a href="submit"><button type="button" class="btn btn-custom">Share your story</button></a>
+			
+		</div>
+
+	</div>
+</div> -->
+
+<div class="container">
+	<div class="row text-center">
+		<h2>Stories</h2>
+	</div>
+
+
+
+	<div class="row">	
+
+		{{#each videos}}
+			<div class="col-md-4 col-sm-6 video-panel-container">
+				<div class="thumbnail video-panel">
+					
+					<a href="/singlevideo/{{this._id}}">
+						{{#embedYoutubeImg}}{{this}}{{/embedYoutubeImg}}
+					</a>
+					
+					<div class="video-panel-caption">
+						<p>{{this.speaker}} from {{this.speakerLocation}}</p>
+						
+					</div>
+			</div>
+		</div>
+		{{/each}}
+	</div> 
+	<div class="row text-center">
+		<a href="/videos"><button type="button" class="btn btn-custom">Listen to more stories</button></a>
+	</div>
+	<br><br><br>
+</div>
+
+
+
+
+<div class="footer">
+	<div class="row">
+		<div class="col-md-12 col-sm-12">
+			<p id="footer-text">
+				<br>
+				The Story Swap
+				<br>
+			</p>
+		</div>
+	</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>

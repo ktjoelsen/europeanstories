@@ -1,0 +1,31 @@
+{{> navbar}}
+
+<div class="narrow-page-container single-video-display">
+
+	<div class="row">
+		<div class="video-container">
+			{{#embedYoutube}}{{this}}{{/embedYoutube}}
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<!-- <div class="col-sm-8">
+			<h4>{{this.video.storytitle}}</h4>
+		</div> -->
+		<p>{{this.video.speaker}} from {{this.video.speakerLocation}}</p>
+	</div>
+
+<!-- 	<button type="button" id="video-upvote-courageous" class="btn btn-default">Most courageous</button>
+	<button type="button" id="video-upvote-inspiring" class="btn btn-default">Most inspiring</button>
+	<button type="button" id="video-upvote-unique" class="btn btn-default">Most unique</button>
+
+		
+	<br>
+	<p>courageous votes: {{this.video.votes.courageous}}</p>
+	<p>inspiring votes: {{this.video.votes.inspiring}}</p>
+	<p>unique votes: {{this.video.votes.unique}}</p> -->
+
+
+</div>
+
+<script src="/javascripts/singlevideo.js"></script>

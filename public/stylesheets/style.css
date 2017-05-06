@@ -1,0 +1,224 @@
+body {
+  padding-top: 50px;
+  /*background-color: rgb(238, 238, 238)!important;*/
+  background-color: #b3d1ff;
+}
+
+a {
+  color: #00B7FF;
+}
+
+p {
+  font-family: 'Muli', sans-serif;
+}
+
+
+
+
+/* Page widths */
+
+.page-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Used for About page, Single video*/
+.narrow-page-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.small-top-margin {
+  margin-top: 3em;
+}
+
+.small-bottom-margin {
+  margin-bottom: 3em;
+}
+
+.small-left-padding {
+  padding-left: 3em;
+}
+
+.btn-custom {
+  background-color: #f06e97;
+  color: white;
+  font-family: 'Karla', sans-serif;
+
+}
+
+.btn.btn-custom {
+  font-size: 14pt
+}
+
+.btn.btn-custom:hover {
+  background-color: gray;
+  /*color: #44d9e6;*/
+  text-decoration: none;
+  ;
+  
+}
+
+
+
+/*  NAVBAR  */
+
+
+.navbar {
+  background: #fff;
+
+}
+
+
+
+
+.navbar-nav > li > a {
+  
+  font-family: 'Karla', sans-serif;
+  text-shadow: none!important;
+  font-size: 16px;
+  color: #1a53af;
+}
+
+.navbar-brand {
+  font-family: 'Karla', sans-serif;
+  font-size: 26px!important;
+  color: #1a53af;
+
+}
+
+
+.navbar-toggle .icon-bar {
+
+  background-color: #cccccc;
+
+}
+
+
+
+/* HOME PAGE  */
+
+#home-header {
+  
+  width: 100%;
+  background-color: #b3d1ff;
+
+}
+
+.home-header-panel {
+  /*margin: 0em 10em 3em;*/
+
+}
+
+#home-header-text {
+  color: white;
+  padding: 2em;
+}
+
+#home-header-text h1 {
+  
+  text-transform: uppercase;
+  font-size: 40pt;
+}
+
+#home-header-text h2 {
+  
+  font-size: 20pt;
+}
+
+#home-header button {
+  margin: 1em;
+}
+
+
+/* About */
+
+.about-pitch {
+  padding: 1em 6em;
+  position: relative;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+
+
+
+
+
+/* VIDEOS - PANELS */
+
+.video-panel img:hover {
+  opacity: 0.7;
+}
+
+/* size iframe according to parent*/
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-panel-caption {
+  padding: 1em;
+  color: gray;
+}
+
+
+/* VIDEO PAGE*/
+
+#videos-container {
+  margin-top: 5em;
+}
+
+.single-video-display {
+  margin-top: 5em;
+}
+
+
+
+
+
+
+/* FOOTER */
+ .footer{
+  height: 150px;
+  background-color: rgba(45,45,45,1);
+  color: white;
+  text-align: center;
+ }
+
+
+
+
+/* ABOUT page */
+.about-page {
+  margin-top: 2em;
+  padding: 2em;
+  background-color: white;  
+}
+
+
+.about-page h1 {
+  text-align: center;
+}
+
+.about-page hr {
+  height: 3px;
+}
+
+
