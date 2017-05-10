@@ -11,16 +11,6 @@ var Video = require('../models/videomodel');
  */
 
  router.get('/', function(req, res, next) {
-    // Video.find({}).sort({date: 'desc'}).exec(function (err, videos) {
-
-    //     // handle error
-    //     if (err) return console.error(err);
-        
-    //     res.render('submit', {
-    //       title: 'gray',
-    //       videos: videos
-    //     });
-    // });
 
     res.render('submit');
 
@@ -61,8 +51,18 @@ var Video = require('../models/videomodel');
 
 
 var getYouTubeID = function(youtubeLink) {
-    var array = youtubeLink.split('=');
-    var id = array[array.length - 1];
+    var array;
+    var id;
+    if (youtubeLink.includes("youtu.be")) {
+        array = youtubeLink.split("youtu.be/");
+        id = array[array.length - 1];        
+    } else if (youtubeLink.includes("youtube.com/watch")) {
+        array = youtubeLink.split('=');
+        id = array[array.length - 1];        
+    } else {
+        id = youtubeLink;
+    }
+
     return id;
 };
 
